@@ -1,6 +1,7 @@
+const url = 'http://api.citybik.es/v2/networks';
 window.onload = function() {
   // CREATE A NEW XMLHttpRequest OBJECT
-  const url = 'http://api.citybik.es/v2/networks';
+
   const http = new XMLHttpRequest();
 
   // THIS FUNCTION WILL FIRE EVERYTIME WE HAVE A CHANGE
