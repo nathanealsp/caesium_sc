@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <div class="container">
     <div class="box box1">1</div>
     <div class="box box2">2</div>
@@ -20,8 +19,17 @@
     <div class="box box8">8</div>
     <div class="box box9">9</div>
     <div class="box box10">10</div>
-  </div>
 
+  </div>
+  <video controls class='handsome' src="">
+    <script>
+      const video = document.querySelector('.handsome');
+      navigator.mediaDevices.getUserMedia({ video: true }).then(MediaStream => {
+        video.scr = window.URL.createObjectURL(MediaStream);
+        video.load();
+        video.play();
+      }).catch(err => console.log(err));
+    </script>
 </body>
 
 </html>
