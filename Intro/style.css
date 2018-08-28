@@ -244,12 +244,23 @@ input::-moz-focus-inner {
 
 .box10 {
   background: #16a085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* We start writing out flexbox here. The above is just page setup */
 
+.box {
+  /* width: 300px; */
+  /* font-size: 20px; */
+}
+
 .container {
+  border: 10px solid mistyrose;
   display: flex;
-  border: 10px solid goldenrod;
   height: 100vh;
+  align-items: center;
+  /* border: 10px solid goldenrod; */
+  /* flex-wrap: wrap; */
 }
