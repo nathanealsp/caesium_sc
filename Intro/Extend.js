@@ -6,10 +6,22 @@ class Griffins {
   job(item) {
     console.log(`${this.name} is a ${item}`);
   }
+  get description() {
+    console.log(`${this.name} is funny`);
+  }
+  set character(who) {
+    this.who = who;
+  }
+  get characterInShow() {
+    console.log(`${this.name} is the ${this.who} in family Guy`);
+  }
 }
 
 const stewie = new Griffins('Stewie', 'Quahog');
 stewie.job('son');
+stewie.description;
+stewie.character = 'baby';
+stewie.characterInShow;
 console.log(stewie);
 
 class Dad extends Griffins {
@@ -24,4 +36,5 @@ class Dad extends Griffins {
 
 const peter = new Dad('Peter', 'Springfield', 12);
 peter.iq(10);
+peter.job('Bartender and Dad');
 console.log(peter);
