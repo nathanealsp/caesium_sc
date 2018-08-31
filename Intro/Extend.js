@@ -20,7 +20,7 @@ class Griffins {
 const stewie = new Griffins('Stewie', 'Quahog');
 stewie.job('son');
 stewie.description;
-stewie.character = 'baby';
+stewie.character = 'Brains Friend';
 stewie.characterInShow;
 console.log(stewie);
 
